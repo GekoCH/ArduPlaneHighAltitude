@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE2E64D2-D626-4F5D-A79C-C91AA0E3D85F}</ProjectGuid>
+    <RootNamespace>ArduCAM_OSD</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Sicherung\Desktop\Privates\arduino\ArduPlane\arduino-1.0.1\hardware\arduino\cores\arduino;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\arduino-1.0.1\hardware\arduino\variants\standard;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\FastSerial;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\FastSerial\utility;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\AP_Common;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\AP_Common\utility;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\AP_Math;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\AP_Math\utility;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\GCS_MAVLink;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\GCS_MAVLink\utility;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\MemoryFree;D:\Sicherung\Desktop\Privates\arduino\ArduPlane\osd\arducam-osd\libraries\MemoryFree\utility;d:\sicherung\desktop\privates\arduino\arduplane\arduino-1.0.1\hardware\tools\avr\avr\include\;d:\sicherung\desktop\privates\arduino\arduplane\arduino-1.0.1\hardware\tools\avr\avr\include\avr\;d:\sicherung\desktop\privates\arduino\arduplane\arduino-1.0.1\hardware\tools\avr\avr\;d:\sicherung\desktop\privates\arduino\arduplane\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Privates\arduino\ArduPlane\ArduPlane_PhD\ArduCAM_OSD_SELF\ArduCAM_OSD\Visual Micro\.ArduCAM_OSD.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>ARDUINO=101;__AVR_ATmega328P__;F_CPU=16000000L;__AVR__;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ArduCAM_OSD.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="ArduNOTES.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="BOOT_Func.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Font.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="MAVLink.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="OSD_Config_Func.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="OSD_Panels.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="read_serial.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArduCam_Max7456.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="OSD_Config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="OSD_Func.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="OSD_Vars.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Spi.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Visual Micro\.ArduCAM_OSD.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArduCam_Max7456.cpp" />
+    <ClCompile Include="Spi.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM24" arduino.board.name="atmega328" arduino.board.desc="Arduino Duemilanove w/ ATmega328" arduino.board.property_bag="atmega328.name=Arduino Duemilanove w/ ATmega328&#xD;&#xA;atmega328.upload.protocol=arduino&#xD;&#xA;atmega328.upload.maximum_size=30720&#xD;&#xA;atmega328.upload.speed=57600&#xD;&#xA;atmega328.bootloader.low_fuses=0xFF&#xD;&#xA;atmega328.bootloader.high_fuses=0xDA&#xD;&#xA;atmega328.bootloader.extended_fuses=0x05&#xD;&#xA;atmega328.bootloader.path=atmega&#xD;&#xA;atmega328.bootloader.file=ATmegaBOOT_168_atmega328.hex&#xD;&#xA;atmega328.bootloader.unlock_bits=0x3F&#xD;&#xA;atmega328.bootloader.lock_bits=0x0F&#xD;&#xA;atmega328.build.mcu=atmega328p&#xD;&#xA;atmega328.build.f_cpu=16000000L&#xD;&#xA;atmega328.build.core=arduino&#xD;&#xA;atmega328.build.variant=standard&#xD;&#xA;" arduino.build.mcu="atmega328p" arduino.build.f_cpu="16000000L" arduino.build.core="arduino" arduino.upload.protocol="arduino" arduino.upload.speed="57600" arduino.upload.maximum_size="30720" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

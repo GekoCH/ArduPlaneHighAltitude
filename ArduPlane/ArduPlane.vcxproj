@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7CA90BCC-268B-4C59-BC67-57CB88F9C36B}</ProjectGuid>
+    <RootNamespace>ArduPlane</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Privates\arduino\ArduPlane\arduino-1.0.3\hardware\arduino\cores\arduino;D:\Privates\arduino\ArduPlane\arduino-1.0.3\hardware\arduino\variants\standard;C:\px4\ArduPlane_PhD\libraries\AP_Common;C:\px4\ArduPlane_PhD\libraries\AP_Common\utility;C:\px4\ArduPlane_PhD\libraries\AP_Progmem;C:\px4\ArduPlane_PhD\libraries\AP_Progmem\utility;C:\px4\ArduPlane_PhD\libraries\AP_HAL;C:\px4\ArduPlane_PhD\libraries\AP_HAL\utility;C:\px4\ArduPlane_PhD\libraries\AP_Menu;C:\px4\ArduPlane_PhD\libraries\AP_Menu\utility;C:\px4\ArduPlane_PhD\libraries\AP_Param;C:\px4\ArduPlane_PhD\libraries\AP_Param\utility;C:\px4\ArduPlane_PhD\libraries\AP_GPS;C:\px4\ArduPlane_PhD\libraries\AP_GPS\utility;C:\px4\ArduPlane_PhD\libraries\AP_Baro;C:\px4\ArduPlane_PhD\libraries\AP_Baro\utility;C:\px4\ArduPlane_PhD\libraries\AP_Compass;C:\px4\ArduPlane_PhD\libraries\AP_Compass\utility;C:\px4\ArduPlane_PhD\libraries\AP_Math;C:\px4\ArduPlane_PhD\libraries\AP_Math\utility;C:\px4\ArduPlane_PhD\libraries\AP_ADC;C:\px4\ArduPlane_PhD\libraries\AP_ADC\utility;C:\px4\ArduPlane_PhD\libraries\AP_ADC_AnalogSource;C:\px4\ArduPlane_PhD\libraries\AP_ADC_AnalogSource\utility;C:\px4\ArduPlane_PhD\libraries\AP_InertialSensor;C:\px4\ArduPlane_PhD\libraries\AP_InertialSensor\utility;C:\px4\ArduPlane_PhD\libraries\AP_AHRS;C:\px4\ArduPlane_PhD\libraries\AP_AHRS\utility;C:\px4\ArduPlane_PhD\libraries\PID;C:\px4\ArduPlane_PhD\libraries\PID\utility;C:\px4\ArduPlane_PhD\libraries\RC_Channel;C:\px4\ArduPlane_PhD\libraries\RC_Channel\utility;C:\px4\ArduPlane_PhD\libraries\AP_RangeFinder;C:\px4\ArduPlane_PhD\libraries\AP_RangeFinder\utility;C:\px4\ArduPlane_PhD\libraries\Filter;C:\px4\ArduPlane_PhD\libraries\Filter\utility;C:\px4\ArduPlane_PhD\libraries\AP_Buffer;C:\px4\ArduPlane_PhD\libraries\AP_Buffer\utility;C:\px4\ArduPlane_PhD\libraries\AP_Relay;C:\px4\ArduPlane_PhD\libraries\AP_Relay\utility;C:\px4\ArduPlane_PhD\libraries\AP_Camera;C:\px4\ArduPlane_PhD\libraries\AP_Camera\utility;C:\px4\ArduPlane_PhD\libraries\AP_Airspeed;C:\px4\ArduPlane_PhD\libraries\AP_Airspeed\utility;C:\px4\ArduPlane_PhD\libraries\memcheck;C:\px4\ArduPlane_PhD\libraries\memcheck\utility;C:\px4\ArduPlane_PhD\libraries\APM_OBC;C:\px4\ArduPlane_PhD\libraries\APM_OBC\utility;C:\px4\ArduPlane_PhD\libraries\APM_Control;C:\px4\ArduPlane_PhD\libraries\APM_Control\utility;C:\px4\ArduPlane_PhD\libraries\GCS_MAVLink;C:\px4\ArduPlane_PhD\libraries\GCS_MAVLink\utility;C:\px4\ArduPlane_PhD\libraries\AP_Mount;C:\px4\ArduPlane_PhD\libraries\AP_Mount\utility;C:\px4\ArduPlane_PhD\libraries\AP_Declination;C:\px4\ArduPlane_PhD\libraries\AP_Declination\utility;C:\px4\ArduPlane_PhD\libraries\DataFlash;C:\px4\ArduPlane_PhD\libraries\DataFlash\utility;C:\px4\ArduPlane_PhD\libraries\SITL;C:\px4\ArduPlane_PhD\libraries\SITL\utility;C:\px4\ArduPlane_PhD\libraries\AP_Navigation;C:\px4\ArduPlane_PhD\libraries\AP_Navigation\utility;C:\px4\ArduPlane_PhD\libraries\AP_L1_Control;C:\px4\ArduPlane_PhD\libraries\AP_L1_Control\utility;C:\px4\ArduPlane_PhD\libraries\AP_HAL_AVR;C:\px4\ArduPlane_PhD\libraries\AP_HAL_AVR\utility;C:\px4\ArduPlane_PhD\libraries\AP_HAL_AVR_SITL;C:\px4\ArduPlane_PhD\libraries\AP_HAL_AVR_SITL\utility;C:\px4\ArduPlane_PhD\libraries\AP_HAL_PX4;C:\px4\ArduPlane_PhD\libraries\AP_HAL_PX4\utility;C:\px4\ArduPlane_PhD\libraries\AP_HAL_Empty;C:\px4\ArduPlane_PhD\libraries\AP_HAL_Empty\utility;d:\privates\arduino\arduplane\arduino-1.0.3\hardware\tools\avr\avr\include\;d:\privates\arduino\arduplane\arduino-1.0.3\hardware\tools\avr\avr\include\avr\;d:\privates\arduino\arduplane\arduino-1.0.3\hardware\tools\avr\avr\;d:\privates\arduino\arduplane\arduino-1.0.3\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Privates\arduino\ArduPlane\ArduPlane_PhD\ArduPlane\Visual Micro\.ArduPlane.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega328P__;ARDUINO=101;__AVR__;F_CPU=16000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ArduPlane.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Attitude.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="C34ReadSend.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="climb_rate.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands_logic.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands_process.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="compat.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_modes.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="events.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="failsafe.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="GCS_Mavlink.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="geofence.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="LEDPostion.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Log.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="navigation.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Parameters.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="radio.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="readControlSwitches.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="ReleaseRelais.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="sensors.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="setup.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="system.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="test.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="zusatz.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="APM_Config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="compat.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="GCS.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Parameters.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Visual Micro\.ArduPlane.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.board.name="apm2_2560HAL" arduino.board.desc="Arduino Mega 2560 HAL (Apm 2)" arduino.board.property_bag="name=Arduino Mega 2560 HAL (Apm 2)&#xD;&#xA;upload.protocol=wiring&#xD;&#xA;upload.maximum_size=258048&#xD;&#xA;upload.speed=115200&#xD;&#xA;bootloader.low_fuses=0xFF&#xD;&#xA;bootloader.high_fuses=0xD8&#xD;&#xA;bootloader.extended_fuses=0xFD&#xD;&#xA;bootloader.path=stk500v2&#xD;&#xA;bootloader.file=stk500boot_v2_mega2560.hex&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega2560&#xD;&#xA;build.f_cpu=16000000L&#xD;&#xA;build.nocore=true&#xD;&#xA;build.noarchive=true&#xD;&#xA;build.option1=-mcall-prologues&#xD;&#xA;build.option2=-DCONFIG_HAL_BOARD=HAL_BOARD_APM2&#xD;&#xA;build.option3=-DEXCLUDECORE&#xD;&#xA;build.linkoption1=-mcall-prologues&#xD;&#xA;runtime.ide.path=D:\Privates\arduino\ArduPlane\arduino-1.0.3&#xD;&#xA;build.system.path=D:\Privates\arduino\ArduPlane\ArduPlane_PhD\hardware\apm\system&#xD;&#xA;software=ARDUINO&#xD;&#xA;runtime.ide.version=101&#xD;&#xA;vm.core.include=wprogram.h&#xD;&#xA;vm.boardsource.path=D:\Privates\arduino\ArduPlane\ArduPlane_PhD\hardware\apm&#xD;&#xA;vm.boardsource.name=boards.txt&#xD;&#xA;vm.platformname.name=&#xD;&#xA;" arduino.build.mcu="atmega2560" arduino.build.f_cpu="16000000L" arduino.build.core="" arduino.upload.protocol="wiring" arduino.upload.speed="115200" arduino.upload.maximum_size="258048" arduino.upload.port="COM6" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,5 @@
+AP_Meteo	KEYWORD1
+sht2x_measure_start	KEYWORD2
+sht2x_measure_poll	KEYWORD2
+sht2x_calc_humidity	KEYWORD2
+sht2x_calc_temperature	KEYWORD2
